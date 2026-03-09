@@ -1,14 +1,27 @@
-import Features from '@/components/Features'
 import DotGlobeHeroDemo from '@/components/Hero'
-import React from 'react'
+import Features from '@/components/Features'
+import HowItWorks from '@/components/HowItWorks'
+import ContributorRewards from '@/components/ContributorRewards'
+import Payments from '@/components/Payments'
+import BlockchainInfra from '@/components/BlockchainInfra'
+import TechStack from '@/components/TechStack'
+import Roadmap from '@/components/Roadmap'
+import CTA from '@/components/CTA'
+import Footer from '@/components/Footer'
 
-const Home = () => {
+export default function Home() {
   return (
     <div>
-      <DotGlobeHeroDemo/>
-      <Features/>
+      <DotGlobeHeroDemo />
+      <Features />
+      <HowItWorks />
+      <ContributorRewards />
+      <Payments />
+      <BlockchainInfra />
+      <TechStack />
+      <Roadmap />
+      <CTA />
+      <Footer />
     </div>
   )
 }
-
-export default Home
