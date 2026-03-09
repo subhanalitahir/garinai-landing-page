@@ -44,7 +44,7 @@ export function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 shrink-0">
           <Image src="/image/logo.png" alt="GarinAI Logo" width={28} height={28} />
-          <span className="text-[11px] tracking-[0.28em] uppercase text-white font-bold select-none"
+          <span className="text-[11px] tracking-[0.28em] uppercase text-white font-light select-none"
             style={{ fontFamily: "Neue Montreal" }}>
             GarinAI
           </span>
@@ -57,7 +57,7 @@ export function Navbar() {
               key={link.label}
               href={link.href}
               onClick={() => setActiveLink(link.label)}
-              className={`relative px-4 py-1.5 text-[11px] tracking-[0.18em] uppercase transition-colors duration-200 rounded-full ${
+              className={`relative px-4 py-1.5 text-[11px] font-light tracking-[0.18em] uppercase transition-colors duration-200 rounded-full ${
                 activeLink === link.label
                   ? "text-white"
                   : "text-white/45 hover:text-white/80"
@@ -79,7 +79,7 @@ export function Navbar() {
         {/* Desktop CTA — hidden on mobile */}
         <a
           href="#"
-          className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-white/14 bg-white/7 px-4 py-1.5 text-[11px] tracking-[0.18em] uppercase text-white/80 transition-all duration-200 hover:border-white/30 hover:bg-white/12 hover:text-white"
+          className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-white/14 bg-white/7 px-4 py-1.5 text-[11px] font-light tracking-[0.18em] uppercase text-white/80 transition-all duration-200 hover:border-white/30 hover:bg-white/12 hover:text-white"
           style={{ fontFamily: "Neue Montreal" }}
         >
           Get Started
@@ -152,7 +152,7 @@ export function Navbar() {
             />
 
             {/* Nav links */}
-            <div className="flex flex-1 flex-col items-center justify-center gap-0 -mt-8">
+            <div className="flex flex-1 flex-col items-center justify-center gap-2 -mt-8">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.label}
@@ -171,16 +171,16 @@ export function Navbar() {
                     className="relative block leading-[0.88] uppercase select-none text-white"
                     style={{
                       fontFamily: "Canopee",
-                      fontSize: "clamp(3.8rem, 11vw, 5.5rem)",
+                      fontSize: "clamp(1.8rem, 5.5vw, 3.2rem)",
                       fontWeight: 400,
-                      letterSpacing: "0.04em",
+                      letterSpacing: "0.02em",
                       transition: "letter-spacing 0.4s ease-out",
                     }}
                     onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLAnchorElement).style.letterSpacing = "0.2em";
+                      (e.currentTarget as HTMLAnchorElement).style.letterSpacing = "0.12em";
                     }}
                     onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLAnchorElement).style.letterSpacing = "0.04em";
+                      (e.currentTarget as HTMLAnchorElement).style.letterSpacing = "0.02em";
                     }}
                   >
                     <span className="relative z-10">{link.label}</span>
