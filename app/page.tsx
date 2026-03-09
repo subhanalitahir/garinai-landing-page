@@ -39,10 +39,10 @@ export default function DotGlobeHeroDemo() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter leading-[0.85] select-none"
+              className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.85] select-none"
               style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
             >
-              <span className="block font-light text-foreground/70 mb-3 text-4xl md:text-6xl lg:text-7xl">
+              <span className="block font-light text-foreground/70 mb-3 text-3xl md:text-5xl lg:text-6xl">
                 Deploy Once
               </span>
               <span className="block relative">
@@ -69,14 +69,14 @@ export default function DotGlobeHeroDemo() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="max-w-3xl mx-auto space-y-4"
           >
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium" 
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-medium" 
                style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
               Publish AI models, run them in live Spaces{" "}
               <span className="text-foreground font-semibold bg-gradient-to-r from-primary/20 to-primary/10 px-2 py-1 rounded-md">
                 and earn automatically from usage.
               </span>
             </p>
-            <p className="text-lg text-muted-foreground/80 leading-relaxed">
+            <p className="text-sm text-muted-foreground/80 leading-relaxed">
 GarbinAI is a blockchain-powered AI platform where developers publish models, run them in live inference environments, and automatically earn rewards whenever their models are used.            </p>
           </motion.div>
         </motion.div>
@@ -94,7 +94,7 @@ GarbinAI is a blockchain-powered AI platform where developers publish models, ru
               y: -2
             }}
             whileTap={{ scale: 0.98 }}
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary via-primary to-primary/90 text-primary-foreground rounded-xl font-semibold text-lg shadow-xl hover:shadow-primary/30 transition-all duration-500 overflow-hidden border border-primary/20"
+            className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary via-primary to-primary/90 text-primary-foreground rounded-xl font-semibold text-base shadow-xl hover:shadow-primary/30 transition-all duration-500 overflow-hidden border border-primary/20"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <motion.div
@@ -116,7 +116,7 @@ GarbinAI is a blockchain-powered AI platform where developers publish models, ru
               y: -2
             }}
             whileTap={{ scale: 0.98 }}
-            className="group relative inline-flex items-center gap-3 px-8 py-4 border-2 border-border/40 rounded-xl font-semibold text-lg hover:border-primary/40 transition-all duration-500 backdrop-blur-xl bg-background/60 hover:bg-background/90 shadow-lg overflow-hidden"
+            className="group relative inline-flex items-center gap-2 px-6 py-3 border-2 border-border/40 rounded-xl font-semibold text-base hover:border-primary/40 transition-all duration-500 backdrop-blur-xl bg-background/60 hover:bg-background/90 shadow-lg overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <Zap className="relative z-10 w-5 h-5 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" />
