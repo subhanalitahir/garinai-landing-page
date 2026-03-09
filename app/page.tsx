@@ -7,12 +7,14 @@ import BlockchainInfra from '@/components/BlockchainInfra'
 import Roadmap from '@/components/Roadmap'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
+import NewSection from '@/components/NewSection'
 
 export default function Home() {
   return (
     <div>
       <DotGlobeHeroDemo />
       <Features />
+      <NewSection/>
       <HowItWorks />
       <ContributorRewards />
       <Payments />
