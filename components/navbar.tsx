@@ -76,14 +76,26 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* Desktop CTA — hidden on mobile */}
-        <a
-          href="#"
-          className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-white/14 bg-white/7 px-4 py-1.5 text-[11px] font-light tracking-[0.18em] uppercase text-white/80 transition-all duration-200 hover:border-white/30 hover:bg-white/12 hover:text-white"
-          style={{ fontFamily: "Neue Montreal" }}
-        >
-          Get Started
-        </a>
+        {/* Desktop CTAs — hidden on mobile */}
+        <div className="hidden md:flex items-center gap-2">
+          <a
+            href="https://huggingface.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/14 bg-white/7 px-4 py-1.5 text-[11px] font-light tracking-[0.18em] uppercase text-white/80 transition-all duration-200 hover:border-white/30 hover:bg-white/12 hover:text-white"
+            style={{ fontFamily: "Neue Montreal" }}
+          >
+            <Image src="/image/huggingface-color.svg" alt="" width={14} height={14} aria-hidden />
+            Sign in with HF
+          </a>
+          <a
+            href="#"
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/14 bg-white/7 px-4 py-1.5 text-[11px] font-light tracking-[0.18em] uppercase text-white/80 transition-all duration-200 hover:border-white/30 hover:bg-white/12 hover:text-white"
+            style={{ fontFamily: "Neue Montreal" }}
+          >
+            Get Started
+          </a>
+        </div>
 
         {/* Mobile hamburger — visible only on mobile */}
         <button
@@ -197,6 +209,27 @@ export function Navbar() {
                 </motion.div>
               ))}
             </div>
+
+            {/* Sign in with HF — mobile */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.45, delay: 0.45 }}
+              className="flex justify-center pb-6"
+            >
+              <a
+                href="https://huggingface.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/14 bg-white/7 px-5 py-2 text-[11px] font-light tracking-[0.18em] uppercase text-white/80 transition-all duration-200 hover:border-white/30 hover:bg-white/12 hover:text-white"
+                style={{ fontFamily: "Neue Montreal" }}
+              >
+                <Image src="/img/huggingface-color.svg" alt="" width={14} height={14} aria-hidden />
+                Sign in with Hugging Face
+              </a>
+            </motion.div>
 
             {/* Social links at bottom */}
             <motion.div

@@ -109,20 +109,6 @@ export default function Footer() {
 							))}
 						</div>
 
-						{/* Status badge */}
-						<motion.div
-							initial={{ opacity: 0 }}
-							animate={inView ? { opacity: 1 } : {}}
-							transition={{ duration: 0.6, delay: 0.5 }}
-							className="mt-6 inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/8 px-2.5 py-1"
-						>
-							<motion.span
-								animate={{ opacity: [0.5, 1, 0.5] }}
-								transition={{ duration: 2, repeat: Infinity }}
-								className="h-1.5 w-1.5 rounded-full bg-green-400"
-							/>
-							<span className="text-[10px] text-green-400/80 tracking-wider">All systems operational</span>
-						</motion.div>
 					</motion.div>
 
 					{/* Link groups */}
